@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;1,600&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   font-family: 'Montserrat', sans-serif;
+}
+:root {
+   --color-primary-body: #48368A;
+   --color-secundary-body: #140B24; 
+   --color-padrao: aqua;
+}
+.content{
+   padding: 0 2rem;
+}
+html{
+   font-size: 62.5%;
+}
+body {
+   font-size: 1.6rem;
+   background-color: var(--color-secundary-body);
+   color: white;
+
+}
+h1,h2,h3,h4,h5,h6{
+   color: var(--color-padrao);
+   font-family: 'Poppins', sans-serif;
+
+}
+a{
+   text-decoration: none;
+   color: inherit;
+}
+header{
+   background-color: rgba(0, 0, 0, 0.377);
+   color: white;
+   padding: 1rem;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   z-index: 10;
+}
+header .menu-content {
+   align-items: center;
+   display: flex;
+   margin: auto;
+   justify-content: center;
+}
+header .menu {
+   display: flex;
+   gap: 2rem;
+}
+header .menu li{
+   transition: all 300ms ease-in-out;
+   padding: 1rem;
+}
+header .menu li:hover{
+   background-color: rgba(0, 255, 255, 0.63);
+}
+@media (max-width: 600px) {
+   header .menu{
+      font-size: 1rem;
+   }
+}
+section{
+   min-height: 100vh;
+}
+section.home {
+   font-size: 4.5rem;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   background: url(../assets/img/bg-section-my-name.jpg) center center no-repeat ;
+   background-size: cover;
+   background-attachment: fixed;
+   gap: 2rem;
+}
+section.home p{
+   text-transform: uppercase;
+   font-size: 3.5rem;
+}
+@media (max-width: 600px){
+
+}
+/* INCOMPLETO */
+section.about{
+   background: url(../assets/img/bg-section-biografia.jpeg) top center no-repeat;
+   font-size: 3rem;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+section.about .content {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+section.about .container-bio{
+   padding: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(255, 255, 255, 0.267);
+   color: white;
+   width: 50rem;
+   height: 60vh;
+   border-radius: 1rem;
+}
+
+@media (max-width: 1089px ){
+   section.about{
+      padding: 2rem 0;
+   }
+   section.about .container-bio{
+      width: auto;
+      height: auto;
+   }
+}
+section.projects{
+   position: relative;
+   font-size: 4rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 2rem;
+}
+section.projects .content{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+section.projects img.wave{
+   position: absolute;
+   top: 0;
+}
+p.more-projects{
+   color: gray;
+}
+section.projects .container-cards{
+   padding: 10rem;
+   border-radius: 2rem;
+   background-color: rgba(128, 128, 128, 0.342);
+   flex-wrap: wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   margin: 2rem;
+}
+section.projects a.github{
+   transition: all 200ms ease-in-out;
+   display: flex;
+   justify-content: center;
+   width: 30rem;
+   margin: 2rem;
+   gap: 1rem;
+   background-color: rgba(128, 128, 128, 0.247);
+   padding: 1rem;
+   border-radius: 2rem;
+   border: 0.2rem solid gray;
+}
+section.projects a.github:hover{
+   border: 0.2rem solid aqua;
+}
+section.projects .container-cards .card-project{
+   position: relative;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 30rem;
+   height: 40rem;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+section.projects .card-project .card-img{
+   width: 100%;
+   height: 20rem;
+   background: gray url(../assets/img/previews-projects/preview-project-easymoney.png) center no-repeat;
+   background-size: cover;
+}
+.name-project{
+   color: aqua;
+}
+.description-project{
+
+   font-size: 2rem;
+   padding: 2rem;
+}
+button.show-project{
+   padding: 1rem;
+   width: 20rem;
+   margin: auto;
+   cursor: pointer;
+}
+footer{
+   box-shadow: 1rem 0rem 3rem 4px white;
+   padding: 3rem;
+   background-color: white;
+   color: black;
+   border-top-right-radius: 3rem;
+   border-top-left-radius: 3rem;
+}
+footer h1{
+   text-align: center;
+   color: black;
+}
+footer .github,
+footer .instagram,
+footer .linkedin {
+   cursor: pointer;
+   display: flex;
+   gap: 2rem;
+   margin: 1rem 0;
+   align-items: center;
+}
+
