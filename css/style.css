@@ -21,12 +21,11 @@ body {
    font-size: 1.6rem;
    background-color: var(--color-secundary-body);
    color: white;
-
 }
+
 h1,h2,h3,h4,h5,h6{
    color: var(--color-padrao);
    font-family: 'Poppins', sans-serif;
-
 }
 a{
    text-decoration: none;
@@ -40,12 +39,14 @@ header{
    top: 0;
    width: 100vw;
    z-index: 10;
+   height: 8vh;
 }
 header .menu-content {
+   max-width: 1200px;
    align-items: center;
    display: flex;
    margin: auto;
-   justify-content: center;
+   justify-content: space-between;
 }
 header .menu {
    display: flex;
@@ -54,20 +55,49 @@ header .menu {
 header .menu li{
    transition: all 300ms ease-in-out;
    padding: 1rem;
+   border-bottom: 0.1rem solid black;
 }
 header .menu li:hover{
    background-color: rgba(0, 255, 255, 0.63);
 }
-@media (max-width: 600px) {
+header .menu-mobile{
+   display: none;
+   cursor: pointer;
+}
+header .menu-mobile div{
+   margin: 0.8rem;
+   width: 3.2rem;
+   height: 0.2rem;
+   background-color: white;
+}
+
+@media (max-width: 800px){
    header .menu{
-      font-size: 1rem;
+      overflow: hidden;
+      transition: all 0.6s ease-in-out;
+      padding: 1rem;
+      display: block;
+      height: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.377);      top: 8vh;
+   }
+   header .active{
+      height: 30rem;
+      visibility: visible;
+      overflow-y: auto;
+   }
+   header .menu-mobile{
+      display: block;
    }
 }
 section{
    min-height: 100vh;
 }
-section.home {
-   font-size: 4.5rem;
+section.home{
+   font-size: 4rem;
    display: flex;
    text-align: center;
    justify-content: center;
@@ -77,90 +107,120 @@ section.home {
    background-attachment: fixed;
    gap: 2rem;
 }
-section.home p{
-   text-transform: uppercase;
-   font-size: 3.5rem;
-}
-@media (max-width: 600px){
-
-}
 /* INCOMPLETO */
 section.about{
-   background: url(../assets/img/bg-section-biografia.jpeg) top center no-repeat;
-   font-size: 3rem;
-   background-size: cover;
-   background-attachment: fixed;
-   display: flex;
-   align-items: flex-end;
-   justify-content: center;
-}
-section.about .content {
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
-   text-align: center;
+   align-items: flex-end;
    justify-content: center;
+   gap: 0 5rem;
+   padding: 0 2rem;
+   background: url(../assets/img/bg-section-biografia.jpeg);
 }
-section.about .container-bio{
-   padding: 2rem;
+section.about h2{
+   text-align: center;
+}
+section.about div.container-foto{
+   position: relative;
    display: flex;
+   flex-direction: column;
    align-items: center;
-   justify-content: center;
-   background-color: rgba(255, 255, 255, 0.267);
-   color: white;
-   width: 50rem;
-   height: 60vh;
-   border-radius: 1rem;
+   justify-content: end;
 }
 
-@media (max-width: 1089px ){
-   section.about{
-      padding: 2rem 0;
-   }
-   section.about .container-bio{
+section.about div.container-bio{
+   background-color: rgba(255, 255, 255, 0.219);
+   padding: 2rem;
+   border-radius: 1rem;
+   width: 40rem;
+   height: 45rem;
+   display: flex;
+   align-items: center;
+}
+@media (max-width: 962px) {
+   section.about div.container-bio{
       width: auto;
       height: auto;
    }
 }
-section.projects{
-   position: relative;
-   font-size: 4rem;
+section.container-projects{
    display: flex;
-   align-items: center;
-   justify-content: center;
    flex-direction: column;
-   text-align: center;
+   align-items: center;
    padding: 2rem;
 }
-section.projects .content{
+.container-carousel{
    display: flex;
-   justify-content: center;
-   flex-direction: column;
+   max-width: 1000px;
+   background-color: rgba(128, 128, 128, 0.342);
    align-items: center;
+   padding: 10px;
+   margin: 2rem 0;
 }
-section.projects img.wave{
-   position: absolute;
-   top: 0;
+.container-carousel .seta{
+   cursor: pointer;
+}
+.container-cards{
+   margin: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.container-cards .card{
+   background-color: black;
+   color: white;
+   width: 250px;
+   margin: 10px;
+   border-radius: 10px;
+}
+.container-cards .card .card-img{
+   background-color: gray;
+   display: flex;
+   text-transform: uppercase;
+   font-size: 30px;
+   align-items: center;
+   justify-content: center;
+   height: 150px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.container-cards #easymoney .card-img{
+   background-size: cover;
+   background: url(/assets/img/previews-projects/preview-project-easymoney.png) center center; 
+}
+.container-cards #to-do-list .card-img{
+   background: url(/assets/img/previews-projects/preview-to-do-list.png) center center; 
+}
+.container-cards #e-commerce .card-img{
+   background: url(/assets/img/previews-projects/preview-project-e-commerce.png); 
+   background-size: cover;
+}
+.container-cards .card .name-project{
+   padding: 10px;
+   font-size: 3rem;
+   color: var(--color-padrao);
+   font-weight: bold;
+   text-align: center;
+}
+.container-cards .card .description{
+   display: flex;
+   padding: 10px;
+   height: 80px;
+}
+.container-cards .card button{
+   cursor: pointer;
+   display: block;
+   margin: 10px auto;
+   padding: 10px;
 }
 p.more-projects{
    color: gray;
 }
-section.projects .container-cards{
-   padding: 10rem;
-   border-radius: 2rem;
-   background-color: rgba(128, 128, 128, 0.342);
-   flex-wrap: wrap;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 2rem;
-   margin: 2rem;
-}
-section.projects a.github{
+section.container-projects a.github{
    transition: all 200ms ease-in-out;
    display: flex;
    justify-content: center;
-   width: 30rem;
+   align-items: center;
    margin: 2rem;
    gap: 1rem;
    background-color: rgba(128, 128, 128, 0.247);
@@ -168,39 +228,8 @@ section.projects a.github{
    border-radius: 2rem;
    border: 0.2rem solid gray;
 }
-section.projects a.github:hover{
+section.container-projects a.github:hover{
    border: 0.2rem solid aqua;
-}
-section.projects .container-cards .card-project{
-   position: relative;
-   background-color: black;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   width: 30rem;
-   height: 40rem;
-   border-radius: 1rem;
-   cursor: pointer;
-}
-section.projects .card-project .card-img{
-   width: 100%;
-   height: 20rem;
-   background: gray url(../assets/img/previews-projects/preview-project-easymoney.png) center no-repeat;
-   background-size: cover;
-}
-.name-project{
-   color: aqua;
-}
-.description-project{
-
-   font-size: 2rem;
-   padding: 2rem;
-}
-button.show-project{
-   padding: 1rem;
-   width: 20rem;
-   margin: auto;
-   cursor: pointer;
 }
 footer{
    box-shadow: 1rem 0rem 3rem 4px white;
@@ -222,5 +251,11 @@ footer .linkedin {
    gap: 2rem;
    margin: 1rem 0;
    align-items: center;
+}
+.loading{
+   background-color: #030A12;
+   position: absolute;
+   top: 0;
+   bottom: 0;
 }
 

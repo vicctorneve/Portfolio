@@ -10,73 +10,113 @@
 <body>
    <header>
       <div class="menu-content">
+         <div class="menu-mobile">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+         </div>
          <nav>
             <ul class="menu">
-               <a href="#home">
-                  <li>Inicio</li>
-               </a>
-               <a href="#about">
-                  <li>Sobre</li>
-               </a>
-               <a href="#projects">
-                  <li>Projetos</li>
-               </a>
-               <a href="#skills">
-                  <li>Skills</li>
-               </a>
-               <a href="#qualifications">
-                  <li>Qualificações</li>
-               </a>
-               <a href="#contacts">
-                  <li>Contatos</li>
-               </a>
+               <li>
+                  <a href="#home">
+                  Inicio</a>
+               </li>
+               <li>
+                  <a href="#about">Sobre</a>
+               </li>
+               <li>
+                  <a href="#projects">Projetos</a>
+               </li>
+               <li>
+                  <a href="#skills">Skills</a>
+               </li>
+               <li>
+                  <a href="#qualifications">Qualificações</a>
+               </li>
+               <li>
+                  <a href="#contacts">Contatos</a>
+               </li>
             </ul>
          </nav>
       </div>
    </header>
+   <script src="js/scroll-menu.js"></script>
+   <script src="js/menu-mobile.js"></script>
    <section class="home" id="home">
       <div class="content">
-         <h1>Meu nome é Vicctor Neves</h1>
-         <p>Desenvolvedor Front End</p>
+         <h1 id="name"></h1>
+         <p id="profissao"></p>
       </div>
    </section>
+   <script src="js/efeito-digitação.js"></script>
    <main>
       <section class="about" id="about">
-         <div class="content">
-            <div class="container-foto">
-               <h2>Sobre mim</h2>
-               <img c src="assets/img/Photography-Vicctor-Neves.png" alt="Foto de Vicctor Neves">
-            </div>
-            <div class="container-bio">
-               <p>Seja bem vindo(a) ao meu portfólio, meu nome é Vicctor Neves, tenho (18 - Variável) anos e atualmente estudo Front End a (4 Variável) meses. No meu tempo livre gosto assistir séries e animes...</p>
-            </div>
+         <div class="container-foto">
+            <h2>Sobre mim</h2>
+            <img src="assets/img/Photography-Vicctor-Neves.png" alt="Foto de Vicctor Neves">
+         </div>
+         <div class="container-bio">
+            <p>Seja bem vindo(a) ao meu portfólio, meu nome é Vicctor Neves, tenho (18 - Variável) anos e atualmente estudo Front End a (4 Variável) meses. No meu tempo livre gosto assistir séries e animes...</p>
          </div>
       </section>
-      <section class="projects" id="projects">
-         <div class="content">
-            <h1>Projetos</h1>
+      <section class="container-projects" id="projects">
+         <h1>Projetos</h1>
+         <div class="container-carousel">
+            <!-- <img src="assets/img/carousel/seta-left.png" alt="seta left" class="seta" id="seta-left"> -->
             <div class="container-cards">
-               <div class="card-project">
+               <div class="card" id="easymoney">
                   <div class="card-img">
-                     <p class="name-project">EasyMoney</p>
                   </div>
-                  <div class="description-project">
-                     <p>site desenvolvido com HTML / CSS / JS, projeto feito para um cliente sem remuneração.</p>
+                  <p class="name-project">Easymoney</p>
+                  <p class="description">Landing page de grupo de sinais da blaze desenvolvida com HTML / CSS / JS </p>
+                  <button> Ver projeto</button>
+               </div>
+               <div class="card" id="e-commerce">
+                  <div class="card-img">
                   </div>
-                  <a href="https://vicctorneve.github.io/site-Easymoney/" target="_blank"><button class="show-project">Ver projeto</button></a>
+                  <p class="name-project">NeveStyle</p>
+                  <p class="description">Site Ecommerce de roupas desenvolvido com HTML / CSS / JS</p>
+                  <button>Ver projeto</button>
                </div>
-               <div class="card-project">
-                  <p>Em breve</p>
+               <div class="card" id="to-do-list">
+                  <div class="card-img">
+                  </div>
+                  <p class="name-project">To-do List</p>
+                  <p class="description">Site de lista de tarefas desenvolvido com: HTML / CSS / JS</p>
+                  <button>Ver projeto</button>
                </div>
-               <div class="card-project">
-                  <p>Em breve</p>
+               <div class="card">
+                  <div class="card-img">
+                     <p>Em breve</p>
+                  </div>
+                  <p class="name-project"></p>
+                  <p class="description"></p>
+                  <button>Ver projeto</button>
+               </div>
+               <div class="card">
+                  <div class="card-img">
+                     <p>Em breve</p>
+                  </div>
+                  <h2 class="name-project"></h2>
+                  <p class="description"></p>
+                  <button>Ver projeto</button>
+               </div>
+               <div class="card">
+                  <div class="card-img">
+                     <p>Em breve</p>
+                  </div>
+                  <h2 class="name-project"></h2>
+                  <p class="description"></p>
+                  <button>Ver projeto</button>
                </div>
             </div>
-            <p class="more-projects">Mais projetos:</p>
-            <a href="https://github.com/vicctorneve" target="_blank" class="github">
-               <img src="assets/img/icone-github.png" alt="icone github">
-               <p>Github</p>
-            </a>
+            <!-- <img src="assets/img/carousel/seta-right.png" alt="seta right" class="seta" id="seta-right"> -->
+         </div>
+         <p class="more-projects">Mais projetos:</p>
+         <a href="https://github.com/vicctorneve" target="_blank" class="github">
+            <img src="assets/img/icone-github-30px.png" alt="icone github">
+            <p>Github</p>
+         </a>
          </div>
       </section>
       <section class="skills" id="skills">

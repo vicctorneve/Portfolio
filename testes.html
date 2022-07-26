@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cards</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      section.container-projects{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px;
+         background-color: antiquewhite;
+      }
+      .container-carousel{
+         display: flex;
+         max-width: 1000px;
+         background-color: rgba(128, 128, 128, 0.342);
+         align-items: center;
+         padding: 10px;
+      }
+      .container-carousel .seta{
+         cursor: pointer;
+      }
+      .container-cards{
+         margin: 20px 0;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      .container-cards .card{
+         background-color: black;
+         color: white;
+         width: 250px;
+         margin: 10px;
+         border-radius: 10px;
+      }
+      .container-cards .card .card-img{
+         background-color: gray;
+         display: flex;
+         text-transform: uppercase;
+         font-size: 30px;
+         align-items: center;
+         justify-content: center;
+         height: 150px;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+      }
+      .container-cards #easymoney .card-img{
+         background-size: cover;
+         background: url(/assets/img/previews-projects/preview-project-easymoney.png) center center; 
+      }
+      .container-cards #to-do-list .card-img{
+         background: url(/assets/img/previews-projects/preview-to-do-list.png) center center; 
+      }
+      .container-cards #e-commerce .card-img{
+         background: url(/assets/img/previews-projects/preview-project-e-commerce.png); 
+         background-size: cover;
+      }
+      .container-cards .card .name-project{
+         padding: 10px;
+      }
+      .container-cards .card .description{
+         display: flex;
+         padding: 10px;
+         height: 80px;
+      }
+      .container-cards .card button{
+         cursor: pointer;
+         display: block;
+         margin: 10px auto;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <section class="container-projects">
+      <h1>Projetos</h1>
+      <div class="container-carousel">
+         <!-- <img src="assets/img/carousel/seta-left.png" alt="seta left" class="seta" id="seta-left"> -->
+         <div class="container-cards">
+            <div class="card" id="easymoney">
+               <div class="card-img">
+               </div>
+               <h2 class="name-project">Easymoney</h2>
+               <p class="description">Landing page de grupo de sinais da blaze desenvolvida com HTML / CSS / JS </p>
+               <button> Ver projeto</button>
+            </div>
+            <div class="card" id="e-commerce">
+               <div class="card-img">
+               </div>
+               <h2 class="name-project">NeveStyle</h2>
+               <p class="description">Site Ecommerce de roupas desenvolvido com HTML / CSS / JS</p>
+               <button>Ver projeto</button>
+            </div>
+            <div class="card" id="to-do-list">
+               <div class="card-img">
+               </div>
+               <h2 class="name-project">To-do List</h2>
+               <p class="description">Site de lista de tarefas desenvolvido com: HTML / CSS / JS</p>
+               <button>Ver projeto</button>
+            </div>
+            
+            <div class="card">
+               <div class="card-img">
+                  <p>Em breve</p>
+               </div>
+               <h2 class="name-project"></h2>
+               <p class="description"></p>
+               <button>Ver projeto</button>
+            </div>
+            <div class="card">
+               <div class="card-img">
+                  <p>Em breve</p>
+               </div>
+               <h2 class="name-project"></h2>
+               <p class="description"></p>
+               <button>Ver projeto</button>
+            </div>
+            <div class="card">
+               <div class="card-img">
+                  <p>Em breve</p>
+               </div>
+               <h2 class="name-project"></h2>
+               <p class="description"></p>
+               <button>Ver projeto</button>
+            </div>
+         </div>
+         <!-- <img src="assets/img/carousel/seta-right.png" alt="seta right" class="seta" id="seta-right"> -->
+      </div>
+   </section>
+</body>
+</html>
