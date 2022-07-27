@@ -14,7 +14,7 @@
 .content{
    padding: 0 2rem;
    max-width: 120rem;
-   margin: auto;
+   margin: 0 auto;
 }
 html{
    font-size: 62.5%;
@@ -106,57 +106,58 @@ section.home{
    text-align: center;
    justify-content: center;
    flex-direction: column;
-   background: url(../assets/img/bg-section-my-name.jpg) center center no-repeat ;
+   background: url(../assets/img/bg-section-my-name.jpg) center center no-repeat;
    background-size: cover;
    background-attachment: fixed;
    gap: 2rem;
 }
-/* INCOMPLETO */
 section.about{
+   background: url(../assets/img/bg-section-biografia.jpeg)  no-repeat;
+   background-size: cover;
    display: flex;
    flex-wrap: wrap;
-   background: url(../assets/img/bg-section-biografia.jpeg);
-   justify-content: center;
-   align-items: center;
 }
 section.about .content{
-   width: 100vw;
-   align-items: center;
-   justify-content: space-around;
-   gap: 0 5rem;
-   padding: 0 2rem;
+   background-color: antiquewhite;
    display: flex;
+   align-items: flex-end;
+   gap: 2rem;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   width: 100vw;
 }
 section.about h2{
    text-align: center;
 }
 section.about div.container-foto{
-   position: relative;
+   background-color: #48368A;
    display: flex;
    flex-direction: column;
+   justify-content: flex-end;
    align-items: center;
-   justify-content: center;
 }
-
 section.about div.container-bio{
    background-color: rgba(0, 0, 0, 0.253);
    padding: 2rem;
    border-radius: 1rem;
-   max-width: 40rem;
-   height: 45rem;
+   width: 40rem;
+   height: 50rem;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-section.about div.container-bio .text{
+section.about div.container-bio{
    display: flex;
+   justify-content: center;
    align-items: center;
-   height: 100vh;
 }
-section.about div.container-bio .text p{
+section.about div.container-bio p{
    line-height: 3rem;
 }
-@media (max-width: 962px) {
+@media (max-width: 952px) {
+   section.about .content{
+      padding: 2rem;
+   }
    section.about div.container-bio{
       width: auto;
       height: auto;
@@ -205,14 +206,14 @@ section.container-projects .content{
 }
 .container-cards #easymoney .card-img{
    background-size: cover;
-   background: url(/assets/img/previews-projects/preview-project-easymoney.png) center center; 
-}
-.container-cards #to-do-list .card-img{
-   background: url(/assets/img/previews-projects/preview-to-do-list.png) center; 
+   background: url(../assets/img/previews-projects/preview-project-easymoney.png) center center; 
 }
 .container-cards #e-commerce .card-img{
    background: url(/assets/img/previews-projects/preview-project-e-commerce.png); 
    background-size: cover;
+}
+.container-cards #to-do-list .card-img{
+   background: url(../assets/img/previews-projects/preview-to-do-list.png) center; 
 }
 .container-cards .card .name-project{
    padding: 1rem;
@@ -250,11 +251,11 @@ div.agendar-contato {
    display: flex;
    align-items: center;
    margin: 4rem 0;
-   padding: 2rem;
    height: 30rem;
    background-color: #140b248a;
 }
 div.agendar-contato .content{
+   padding: 2rem;
    width: 100vw;
    display: flex;
    flex-wrap: wrap;
@@ -281,15 +282,42 @@ section.skills {
 section.skills h1{
    text-align: center;
 }
+section.skills .content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 section.skills .container-flex{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    margin: 2rem 0;
 }
-section.skills .container-flex img{
-   max-width: 60rem;
+section.skills .container-skills{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 5rem;
+   gap: 1rem;
+   max-width: 600px;
+}
+section.skills .container-skills .ball-skill{
+   text-transform: uppercase;
+   font-size: 2rem;
+   gap: 1rem;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.63);
+   padding: 2rem;
+   border-radius: 100%;
+   width: 18rem;
+   height: 18rem;
 }
 footer{
    box-shadow: 1rem 0rem 3rem 4px white;
@@ -301,6 +329,7 @@ footer{
 }
 footer .content{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
 }
