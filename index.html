@@ -143,6 +143,7 @@
                </div>
                <div class="container-image">
                   <picture>
+                     <source media="(max-width: 350px )" srcset="assets/img/programming-skills-200px.svg">
                      <source media="(max-width: 700px )" srcset="assets/img/programming-skills-300px.svg">
                      <img src="assets/img/programming-skills.svg" alt="">
                   </picture>
@@ -150,9 +151,18 @@
             </div>
          </div>
       </section>
-      <section class="qualifications" id="contacts">
+      <section class="contacts" id="contacts">
          <div class="content">
-            1
+            <form action="">
+               <h1>Contatos</h1>
+               <p>Nome:</p>
+               <input type="text">
+               <p>Telefone:</p>
+               <input type="number" maxlength="10">
+               <p>Deixe sua mensagem:</p>
+               <textarea id="mensage" cols="30" rows="8" maxlength="200"></textarea>
+               <button>Enviar</button>
+            </form>
          </div>
       </section>
    </main>

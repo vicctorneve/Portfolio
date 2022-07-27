@@ -319,6 +319,33 @@ section.skills .container-skills .ball-skill{
    width: 18rem;
    height: 18rem;
 }
+section.contacts .content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+section.contacts form{
+   width: 40rem;
+   position: relative;
+   display: flex;
+   gap: 1rem;
+   flex-direction: column;
+   font-size: 2rem;
+   background-color: #48368a9a;
+   padding: 2rem;
+   border-radius: 2rem;
+}
+section.contacts form h1{
+   text-align: center;
+   margin: 1rem;
+}
+section.contacts form input{
+   padding: 1rem;
+}
+section.contacts form button{
+   padding: 1rem;
+   cursor: pointer;
+}
 footer{
    box-shadow: 1rem 0rem 3rem 4px white;
    padding: 3rem;
