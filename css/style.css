@@ -13,11 +13,15 @@
 }
 .content{
    padding: 0 2rem;
+   max-width: 120rem;
+   margin: auto;
 }
 html{
    font-size: 62.5%;
 }
 body {
+   background: url(../assets/img/bg-body.jpg) no-repeat;
+   background-size: cover;
    font-size: 1.6rem;
    background-color: var(--color-secundary-body);
    color: white;
@@ -111,11 +115,17 @@ section.home{
 section.about{
    display: flex;
    flex-wrap: wrap;
-   align-items: flex-end;
+   background: url(../assets/img/bg-section-biografia.jpeg);
    justify-content: center;
+   align-items: center;
+}
+section.about .content{
+   width: 100vw;
+   align-items: center;
+   justify-content: space-around;
    gap: 0 5rem;
    padding: 0 2rem;
-   background: url(../assets/img/bg-section-biografia.jpeg);
+   display: flex;
 }
 section.about h2{
    text-align: center;
@@ -125,17 +135,26 @@ section.about div.container-foto{
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: end;
+   justify-content: center;
 }
 
 section.about div.container-bio{
-   background-color: rgba(255, 255, 255, 0.219);
+   background-color: rgba(0, 0, 0, 0.253);
    padding: 2rem;
    border-radius: 1rem;
-   width: 40rem;
+   max-width: 40rem;
    height: 45rem;
    display: flex;
+   flex-direction: column;
    align-items: center;
+}
+section.about div.container-bio .text{
+   display: flex;
+   align-items: center;
+   height: 100vh;
+}
+section.about div.container-bio .text p{
+   line-height: 3rem;
 }
 @media (max-width: 962px) {
    section.about div.container-bio{
@@ -143,7 +162,7 @@ section.about div.container-bio{
       height: auto;
    }
 }
-section.container-projects{
+section.container-projects .content{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -151,17 +170,17 @@ section.container-projects{
 }
 .container-carousel{
    display: flex;
-   max-width: 1000px;
+   max-width: 80rem;
    background-color: rgba(128, 128, 128, 0.342);
    align-items: center;
-   padding: 10px;
+   padding: 1rem;
    margin: 2rem 0;
 }
 .container-carousel .seta{
    cursor: pointer;
 }
 .container-cards{
-   margin: 20px 0;
+   margin: 2rem 0;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -169,49 +188,44 @@ section.container-projects{
 .container-cards .card{
    background-color: black;
    color: white;
-   width: 250px;
-   margin: 10px;
-   border-radius: 10px;
+   width: 20rem;
+   margin: 1rem;
+   border-radius: 1rem;
 }
 .container-cards .card .card-img{
    background-color: gray;
    display: flex;
    text-transform: uppercase;
-   font-size: 30px;
+   font-size: 3rem;
    align-items: center;
    justify-content: center;
-   height: 150px;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   height: 15rem;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
 }
 .container-cards #easymoney .card-img{
    background-size: cover;
    background: url(/assets/img/previews-projects/preview-project-easymoney.png) center center; 
 }
 .container-cards #to-do-list .card-img{
-   background: url(/assets/img/previews-projects/preview-to-do-list.png) center center; 
+   background: url(/assets/img/previews-projects/preview-to-do-list.png) center; 
 }
 .container-cards #e-commerce .card-img{
    background: url(/assets/img/previews-projects/preview-project-e-commerce.png); 
    background-size: cover;
 }
 .container-cards .card .name-project{
-   padding: 10px;
-   font-size: 3rem;
+   padding: 1rem;
+   font-size: 2rem;
    color: var(--color-padrao);
    font-weight: bold;
    text-align: center;
 }
-.container-cards .card .description{
-   display: flex;
-   padding: 10px;
-   height: 80px;
-}
 .container-cards .card button{
    cursor: pointer;
    display: block;
-   margin: 10px auto;
-   padding: 10px;
+   margin: 2rem auto;
+   padding: 1rem;
 }
 p.more-projects{
    color: gray;
@@ -221,6 +235,7 @@ section.container-projects a.github{
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 20rem;
    margin: 2rem;
    gap: 1rem;
    background-color: rgba(128, 128, 128, 0.247);
@@ -231,6 +246,51 @@ section.container-projects a.github{
 section.container-projects a.github:hover{
    border: 0.2rem solid aqua;
 }
+div.agendar-contato {
+   display: flex;
+   align-items: center;
+   margin: 4rem 0;
+   padding: 2rem;
+   height: 30rem;
+   background-color: #140b248a;
+}
+div.agendar-contato .content{
+   width: 100vw;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3rem;
+   justify-content: space-between;
+}
+div.agendar-contato .content button{
+   cursor: pointer;
+   padding: 1rem;
+   width: 20rem;
+   background: linear-gradient(to right, rgb(21, 211, 21), rgb(8, 167, 8));
+   font-size: 2rem;
+   font-weight: bolder;
+   color: white;
+   border-radius: 2rem;
+   transition: all 300ms ease-in-out;
+}
+div.agendar-contato .content button:hover{
+   color: black;
+}
+section.skills {
+   font-size: 3rem;
+}
+section.skills h1{
+   text-align: center;
+}
+section.skills .container-flex{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   margin: 2rem 0;
+}
+section.skills .container-flex img{
+   max-width: 60rem;
+}
 footer{
    box-shadow: 1rem 0rem 3rem 4px white;
    padding: 3rem;
@@ -239,9 +299,26 @@ footer{
    border-top-right-radius: 3rem;
    border-top-left-radius: 3rem;
 }
+footer .content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+footer .content div{
+   height: 30rem;
+}
 footer h1{
-   text-align: center;
+   font-size: 3rem;
    color: black;
+   margin: 2rem 0;
+}
+footer .menu ul,
+footer p{
+   line-height: 3rem;
+}
+footer .menu ul li:hover,
+footer p:hover{
+   text-decoration: underline;
 }
 footer .github,
 footer .instagram,
@@ -251,11 +328,5 @@ footer .linkedin {
    gap: 2rem;
    margin: 1rem 0;
    align-items: center;
-}
-.loading{
-   background-color: #030A12;
-   position: absolute;
-   top: 0;
-   bottom: 0;
 }
 
