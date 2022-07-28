@@ -43,9 +43,9 @@ header{
    top: 0;
    width: 100vw;
    z-index: 10;
-   height: 8vh;
 }
 header .menu-content {
+   height: 5vh;
    max-width: 1200px;
    align-items: center;
    display: flex;
@@ -64,6 +64,19 @@ header .menu li{
 header .menu li:hover{
    background-color: rgba(0, 255, 255, 0.63);
 }
+header .usuario{
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+header .usuario p{
+   transition: all 200ms ease-in-out;
+   padding: 1rem;
+   background-color: green;
+}
+header .usuario p:hover{
+   background-color: gray;
+}
 header .menu-mobile{
    display: none;
    cursor: pointer;
@@ -76,6 +89,8 @@ header .menu-mobile div{
 }
 
 @media (max-width: 800px){
+   header .menu-content{
+   }
    header .menu{
       overflow: hidden;
       transition: all 0.6s ease-in-out;
@@ -86,7 +101,8 @@ header .menu-mobile div{
       position: absolute;
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.377);      top: 8vh;
+      background-color: rgba(0, 0, 0, 0.377);      
+      top: 5vh;
    }
    header .active{
       height: 30rem;
@@ -101,7 +117,7 @@ section{
    min-height: 100vh;
 }
 section.home{
-   font-size: 4rem;
+   font-size: 3rem;
    display: flex;
    text-align: center;
    justify-content: center;
@@ -112,16 +128,14 @@ section.home{
    gap: 2rem;
 }
 section.about{
-   background: url(../assets/img/bg-section-biografia.jpeg)  no-repeat;
+   background: url(../assets/img/bg-section-biografia.jpeg) no-repeat;
    background-size: cover;
    display: flex;
    flex-wrap: wrap;
 }
 section.about .content{
-   background-color: antiquewhite;
    display: flex;
    align-items: flex-end;
-   gap: 2rem;
    justify-content: space-around;
    flex-wrap: wrap;
    width: 100vw;
@@ -129,45 +143,39 @@ section.about .content{
 section.about h2{
    text-align: center;
 }
-section.about div.container-foto{
-   background-color: #48368A;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   align-items: center;
-}
 section.about div.container-bio{
    background-color: rgba(0, 0, 0, 0.253);
-   padding: 2rem;
+   padding:0 2rem;
    border-radius: 1rem;
    width: 40rem;
    height: 50rem;
    display: flex;
    flex-direction: column;
    align-items: center;
-}
-section.about div.container-bio{
-   display: flex;
    justify-content: center;
-   align-items: center;
-}
-section.about div.container-bio p{
    line-height: 3rem;
 }
 @media (max-width: 952px) {
    section.about .content{
       padding: 2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
    }
    section.about div.container-bio{
       width: auto;
       height: auto;
    }
 }
-section.container-projects .content{
+section.container-projects{
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 2rem;
+   justify-content: center;
+   font-size: 2rem;
+}
+section.container-projects h1{
+   text-align: center;
 }
 .container-carousel{
    display: flex;
@@ -209,7 +217,7 @@ section.container-projects .content{
    background: url(../assets/img/previews-projects/preview-project-easymoney.png) center center; 
 }
 .container-cards #e-commerce .card-img{
-   background: url(/assets/img/previews-projects/preview-project-e-commerce.png); 
+   background: url(../assets/img/previews-projects/preview-project-e-commerce.png); 
    background-size: cover;
 }
 .container-cards #to-do-list .card-img{
@@ -230,6 +238,7 @@ section.container-projects .content{
 }
 p.more-projects{
    color: gray;
+   text-align: center;
 }
 section.container-projects a.github{
    transition: all 200ms ease-in-out;
@@ -237,7 +246,7 @@ section.container-projects a.github{
    justify-content: center;
    align-items: center;
    width: 20rem;
-   margin: 2rem;
+   margin: 2rem auto;
    gap: 1rem;
    background-color: rgba(128, 128, 128, 0.247);
    padding: 1rem;
@@ -247,6 +256,7 @@ section.container-projects a.github{
 section.container-projects a.github:hover{
    border: 0.2rem solid aqua;
 }
+
 div.agendar-contato {
    display: flex;
    align-items: center;
@@ -276,17 +286,16 @@ div.agendar-contato .content button{
 div.agendar-contato .content button:hover{
    color: black;
 }
+
 section.skills {
    font-size: 3rem;
-}
-section.skills h1{
-   text-align: center;
-}
-section.skills .content{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+section.skills h1{
+   text-align: center;
 }
 section.skills .container-flex{
    display: flex;
@@ -302,9 +311,9 @@ section.skills .container-skills{
    flex-wrap: wrap;
    margin: 5rem;
    gap: 1rem;
-   max-width: 600px;
+   max-width: 500px;
 }
-section.skills .container-skills .ball-skill{
+section.skills .container-skills .skill{
    text-transform: uppercase;
    font-size: 2rem;
    gap: 1rem;
@@ -313,31 +322,26 @@ section.skills .container-skills .ball-skill{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: rgba(0, 0, 0, 0.63);
    padding: 2rem;
-   border-radius: 100%;
-   width: 18rem;
-   height: 18rem;
 }
-section.contacts .content{
+section.contacts{
    display: flex;
    align-items: center;
    justify-content: center;
 }
 section.contacts form{
-   width: 40rem;
    position: relative;
    display: flex;
    gap: 1rem;
    flex-direction: column;
    font-size: 2rem;
-   background-color: #48368a9a;
-   padding: 2rem;
+   background: linear-gradient(100deg, #341b5fe3, #5b2aafe3);
+   padding: 3rem;
    border-radius: 2rem;
+   width: 50rem;
 }
 section.contacts form h1{
    text-align: center;
-   margin: 1rem;
 }
 section.contacts form input{
    padding: 1rem;
@@ -345,6 +349,14 @@ section.contacts form input{
 section.contacts form button{
    padding: 1rem;
    cursor: pointer;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+}
+@media (max-width: 550px ){
+   section.contacts form{
+      width: 90vw;
+   }
 }
 footer{
    box-shadow: 1rem 0rem 3rem 4px white;
@@ -368,11 +380,10 @@ footer h1{
    color: black;
    margin: 2rem 0;
 }
-footer .menu ul,
-footer p{
+footer{
    line-height: 3rem;
 }
-footer .menu ul li:hover,
+footer li:hover,
 footer p:hover{
    text-decoration: underline;
 }
