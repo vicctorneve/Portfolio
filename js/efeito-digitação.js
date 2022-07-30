@@ -9,8 +9,8 @@ function typing (msg, write) {
       },75 * i)
    }
 }
-function effectTyping () {
+function effectTypingAndDeleting () {
    typing('Meu nome é Vicctor Neves', myName)
    typing('Desenvolvedor Front End', profissao)
 }
-effectTyping()
+effectTypingAndDeleting()
