@@ -20,7 +20,7 @@ html{
    font-size: 62.5%;
 }
 body {
-   background: url(../assets/img/bg-body.jpg) no-repeat;
+   background: url(../assets/img/background/bg-body.webp) no-repeat;
    background-size: cover;
    font-size: 1.6rem;
    background-color: var(--color-secundary-body);
@@ -89,10 +89,10 @@ header .menu-mobile div{
       left: 0;
       right: 0;
       background-color: rgba(0, 0, 0, 0.377);      
-      top: 5vh;
+      top: 6vh;
    }
    header .active{
-      height: 30rem;
+      height: 25rem;
       visibility: visible;
       overflow-y: auto;
    }
@@ -109,13 +109,27 @@ section.home{
    text-align: center;
    justify-content: center;
    flex-direction: column;
-   background: url(../assets/img/bg-section-my-name.jpg) center center no-repeat;
+   background: url(../assets/img/background/bg-section-my-name.webp) center center no-repeat;
    background-size: cover;
    background-attachment: fixed;
    gap: 2rem;
 }
+div.back-to-home{
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border-radius: 100%;
+   width: 50px;
+   height: 50px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 10;
+}
 section.about{
-   background: url(../assets/img/bg-section-biografia.jpeg) no-repeat;
+   background: url(../assets/img/background/bg-section-biografia.webp) no-repeat;
    background-size: cover;
    display: flex;
    flex-wrap: wrap;
@@ -147,7 +161,7 @@ section.about div.container-bio{
       padding: 2rem;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
    }
    section.about div.container-bio{
       width: auto;
@@ -289,6 +303,7 @@ section.skills .container-flex{
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
+   gap: 5rem;
    margin: 2rem 0;
 }
 section.skills .container-skills{
@@ -296,7 +311,6 @@ section.skills .container-skills{
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
-   margin: 5rem;
    gap: 1rem;
    max-width: 500px;
 }
@@ -311,6 +325,22 @@ section.skills .container-skills .skill{
    justify-content: center;
    padding: 2rem;
 }
+@media (max-width: 800px) {
+   section.skills picture{
+      display: none;
+   }
+}
+@media (max-width: 500px) {
+   .container-skills{
+      width: 100vw;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .container-skills .skill{
+      width: 100vw;
+      background-color: black;
+   }
+}
 section.contacts{
    display: flex;
    align-items: center;
@@ -319,7 +349,7 @@ section.contacts{
 section.contacts form{
    position: relative;
    display: flex;
-   gap: 1rem;
+   gap: 2rem;
    flex-direction: column;
    font-size: 2rem;
    background: linear-gradient(100deg, #341b5fe3, #5b2aafe3);

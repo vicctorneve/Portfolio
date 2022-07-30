@@ -6,8 +6,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="css/style.css">
+   <meta name="description" content="Portfolio criado para mostrar projetos e me apresentar profissionalmente.">
 </head>
 <body>
+   <div class="back-to-home">
+      <img src="assets/img/home.svg" alt="">
+   </div>
+   <script src="js/back-to-top.js" defer></script>
    <header>
       <div class="menu-content">
          <div class="menu-mobile">
@@ -18,8 +23,7 @@
          <nav>
             <ul class="menu">
                <li>
-                  <a href="#home">
-                  Inicio</a>
+                  <a href="#home">Inicio</a>
                </li>
                <li>
                   <a href="#about">Sobre</a>
@@ -37,7 +41,6 @@
          </nav>
       </div>
    </header>
-   <script src="js/scroll-menu.js"></script>
    <script src="js/menu-mobile.js"></script>
    <section class="home" id="home">
       <div class="content">
@@ -89,7 +92,7 @@
                </div>
                <p class="more-projects">Mais projetos:</p>
                <a href="https://github.com/vicctorneve" target="_blank" class="github">
-                  <img src="assets/img/icons/icone-github.png" alt="icone github">
+                  <img src="assets/img/icons/logo-github-30px.svg" alt="icone github">
                   <p>Github</p>
                </a>
                </div>
@@ -125,16 +128,14 @@
                   </div>
                   <div class="skill">
                      <p>Github</p>
-                     <img src="assets/img/skills/javascript-logo-skill-70px.png" alt="icone Github">
+                     <img src="assets/img/skills/logo-github-skill.svg" alt="icone Github">
                   </div>
                </div>
-               <div class="container-image">
-                  <picture>
-                     <source media="(max-width: 350px )" srcset="assets/img/programming-skills-200px.svg">
-                     <source media="(max-width: 700px )" srcset="assets/img/programming-skills-300px.svg">
-                     <img src="assets/img/programming-skills.svg" alt="">
-                  </picture>
-               </div>
+               <picture>
+                  <source media="(max-width: 350px )" srcset="assets/img/programming-skills-200px.svg">
+                  <source media="(max-width: 700px )" srcset="assets/img/programming-skills-300px.svg">
+                  <img src="assets/img/programming-skills.svg" alt="">
+               </picture>
             </div>
          </div>
       </section>
@@ -157,7 +158,7 @@
       <div class="content">
          <div class="menu">
             <h1>Menu</h1>
-            <ul>
+            <ul class="menu">
                <li>
                   <a href="#home">
                   Inicio</a>
@@ -176,6 +177,7 @@
                </li>
             </ul>
          </div>
+         <script src="js/scroll-menu.js"></script>
          <div class="sociais">
             <h1>Redes Sociais</h1>
             <p>
