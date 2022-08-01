@@ -52,42 +52,40 @@
    <main>
       <section class="about" id="about">
          <div class="content">
-            <div class="container-foto">
+            <div class="container-foto" data-anime="left">
                <h2>Sobre mim</h2>
                <picture>
                   <source media="(max-width: 650px)" srcset="assets/img/Photography-Vicctor-Neves-300px.png">
                   <img src="assets/img/Photography-Vicctor-Neves.png" alt="Foto de Vicctor Neves">
                </picture>
             </div>
-            <div class="container-bio">
+            <div class="container-bio" data-anime="right">
                <p class="bio">Seja bem vindo ao meu portfolio, meu nome é Vicctor Neves, tenho 18 anos e atualmente estou cursando sistema de informação, sou estudante de programação web, inicialmente me especializando na área de Front end.</p>
             </div>
          </section>
          <section class="container-projects" id="projects">
-            <div class="content">
+            <div class="content" data-anime="up">
                <h1>Projetos</h1>
                <div class="container-carousel">
                   <!-- <img src="assets/img/carousel/seta-left.png" alt="seta left" class="seta" id="seta-left"> -->
                   <div class="container-cards">
                      <div class="card" id="easymoney">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <p class="name-project">Easymoney</p>
-                        <button> Ver projeto</button>
+                        <button class="show-project">Ver projeto</button>
                      </div>
                      <div class="card" id="e-commerce">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <p class="name-project">NeveStyle</p>
                         <button>Ver projeto</button>
                      </div>
                      <div class="card" id="to-do-list">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <p class="name-project">To-do List</p>
                         <button>Ver projeto</button>
                      </div>
                   </div>
+                  <script src="js/script-buttons.js"></script>
                   <!-- <img src="assets/img/carousel/seta-right.png" alt="seta right" class="seta" id="seta-right"> -->
                </div>
                <p class="more-projects">Mais projetos:</p>
@@ -95,12 +93,11 @@
                   <img src="assets/img/icons/logo-github-30px.svg" alt="icone github">
                   <p>Github</p>
                </a>
-               </div>
             </div>
          </div>
       </section>
       <div class="agendar-contato">
-         <div class="content">
+         <div class="content" data-anime="left">
             <h1>Entre em contato comigo</h1>
             <a href=""><button>Whatsapp</button></a>
          </div>
@@ -109,7 +106,7 @@
          <div class="content">
             <h1>Habilidades</h1>
             <div class="container-flex">
-               <div class="container-skills">
+               <div class="container-skills" data-anime="left">
                   <div class="skill">
                      <p>Html</p>
                      <img src="assets/img/skills/logo-html-skill.png" alt="icone html">
@@ -131,7 +128,7 @@
                      <img src="assets/img/skills/logo-github-skill.svg" alt="icone Github">
                   </div>
                </div>
-               <picture>
+               <picture data-anime="right">
                   <source media="(max-width: 350px )" srcset="assets/img/programming-skills-200px.svg">
                   <source media="(max-width: 700px )" srcset="assets/img/programming-skills-300px.svg">
                   <img src="assets/img/programming-skills.svg" alt="">
@@ -140,7 +137,7 @@
          </div>
       </section>
       <section class="contacts" id="contacts">
-         <div class="content">
+         <div class="content" data-anime="up">
             <form action="">
                <h1>Contato</h1>
                <p>Nome:</p>
@@ -206,5 +203,6 @@
          </div>
       </div>
    </footer>
+   <script src="js/scroll-animate.js"></script>
 </body>
 </html>
