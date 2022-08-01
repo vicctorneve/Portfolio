@@ -157,6 +157,11 @@ section.about div.container-bio{
    justify-content: center;
    line-height: 3rem;
 }
+@media (max-width: 500px) {
+   section.about .container-foto img{
+      width: 90vw;
+   }
+}
 @media (max-width: 952px) {
    section.about .content{
       padding: 2rem;
@@ -176,9 +181,11 @@ section.container-projects{
    align-items: center;
    justify-content: center;
    font-size: 2rem;
+   padding: 2rem 0;
 }
 section.container-projects h1{
    text-align: center;
+   margin: 1rem 0;
 }
 .container-carousel{
    display: flex;
@@ -186,7 +193,7 @@ section.container-projects h1{
    background-color: rgba(128, 128, 128, 0.342);
    align-items: center;
    padding: 1rem;
-   margin: 2rem 0;
+   margin: 3rem 0;
 }
 .container-carousel .seta{
    cursor: pointer;
@@ -223,8 +230,9 @@ section.container-projects h1{
    background: url(../assets/img/previews-projects/preview-project-e-commerce.png); 
    background-size: cover;
 }
-.container-cards #to-do-list .card-img{
-   background: url(../assets/img/previews-projects/preview-to-do-list.png) center; 
+.container-cards #invasilign .card-img{
+   background: url(../assets/img/previews-projects/preview-project-invasalign.webp) center left; 
+   background-size: cover;
 }
 .container-cards .card .name-project{
    padding: 1rem;

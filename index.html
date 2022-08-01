@@ -55,7 +55,6 @@
             <div class="container-foto" data-anime="left">
                <h2>Sobre mim</h2>
                <picture>
-                  <source media="(max-width: 650px)" srcset="assets/img/Photography-Vicctor-Neves-300px.png">
                   <img src="assets/img/Photography-Vicctor-Neves.png" alt="Foto de Vicctor Neves">
                </picture>
             </div>
@@ -72,17 +71,17 @@
                      <div class="card" id="easymoney">
                         <div class="card-img"></div>
                         <p class="name-project">Easymoney</p>
-                        <button class="show-project">Ver projeto</button>
+                        <button onclick="window.open('https://vicctorneve.github.io/site-Easymoney/')" class="show-project">Ver projeto</button>
                      </div>
                      <div class="card" id="e-commerce">
                         <div class="card-img"></div>
                         <p class="name-project">NeveStyle</p>
-                        <button>Ver projeto</button>
+                        <button onclick="window.open('https://vicctorneve.github.io/e-commerce-nevestyle/')">Ver projeto</button>
                      </div>
-                     <div class="card" id="to-do-list">
+                     <div class="card" id="invasilign">
                         <div class="card-img"></div>
-                        <p class="name-project">To-do List</p>
-                        <button>Ver projeto</button>
+                        <p class="name-project">Invasalign</p>
+                        <button onclick="window.open('https://vicctorneve.github.io/site_de_negocios/')">Ver projeto</button>
                      </div>
                   </div>
                   <script src="js/script-buttons.js"></script>
@@ -138,14 +137,16 @@
       </section>
       <section class="contacts" id="contacts">
          <div class="content" data-anime="up">
-            <form action="">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+               <input type="hidden" name="accessKey" value="54aa3f1b-81ce-4f7f-ada8-64a8118594cd">
+               <input type="hidden" name="redirectTo" value="https://vicctorneve.github.io/Portfolio/">
                <h1>Contato</h1>
                <p>Nome:</p>
-               <input type="text">
-               <p>Telefone:</p>
-               <input type="number" maxlength="10">
+               <input type="text" placeholder="your name" name="name" required>
+               <p>Email:</p>
+               <input type="email" name="email" placeholder="example@mail.com" required>
                <p>Deixe sua mensagem:</p>
-               <textarea id="mensage" cols="30" rows="8" maxlength="200"></textarea>
+               <textarea name="message" placeholder="Deixe sua mensagem" id="mensage" cols="30" rows="8" maxlength="200" required></textarea>
                <button>Enviar</button>
             </form>
          </div>
