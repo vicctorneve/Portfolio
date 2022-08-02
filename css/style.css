@@ -92,7 +92,7 @@ header .menu-mobile div{
       left: 0;
       right: 0;
       background-color: rgba(0, 0, 0, 0.377);      
-      top: 7vh;
+      top: 6.5vh;
    }
    header .active{
       height: 25rem;
@@ -265,7 +265,7 @@ section.container-projects h1{
    background-size: cover;
 }
 .container-cards #to-do-list .card-img{
-   background: url(../assets/img/previews-projects/preview-project-to-do-list.png) center; 
+   background: url(../assets/img/previews-projects/preview-project-to-do-list.webp) center; 
    background-size: cover;
 }
 .container-cards #clone-whatsapp .card-img{
@@ -455,7 +455,6 @@ footer p:hover{
    text-decoration: underline;
 }
 footer .github,
-footer .instagram,
 footer .linkedin {
    cursor: pointer;
    display: flex;
