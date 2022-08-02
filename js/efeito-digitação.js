@@ -10,7 +10,6 @@ function typing (msg, write) {
    }
 }
 function effectTypingAndDeleting () {
-   typing('Meu nome é Vicctor Neves', myName)
-   typing('Desenvolvedor Front End', profissao)
+   typing('Olá, meu nome é Vicctor Neves', myName)
 }
 effectTypingAndDeleting()

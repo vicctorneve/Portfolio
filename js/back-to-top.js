@@ -4,5 +4,4 @@ backToHome.addEventListener('click', function() {
       top: 0,
       behavior: 'smooth'
    })
-   console.log('back top')
 })

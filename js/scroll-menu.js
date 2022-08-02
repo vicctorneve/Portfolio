@@ -4,12 +4,12 @@ menuLi.forEach(item => {
    item.addEventListener('click', scrollToIdonClick)
 });
 
-function getScrollTopByHref(element) {
+const getScrollTopByHref = element => {
    const id = element.getAttribute('href');
-   return document.querySelector(id).offsetTop
+   return document.querySelector(id).offsetTop - 40
 }
 
-function scrollToPosition(to) {
+const scrollToPosition = to => {
    window.scroll({
       top:to,
       behavior: 'smooth'
