@@ -65,7 +65,7 @@ header .menu li{
    padding: 1rem;
 }
 header .menu li:hover{
-   background-color: rgba(0, 255, 255, 0.63);
+   background-color: gray;
 }
 header .menu-mobile{
    display: none;
@@ -137,7 +137,8 @@ section.home .redes-sociais{
    justify-content: center;
    padding: 1rem;
    border-radius: 2rem;
-   border: 0.5rem solid aqua;
+   color: white;
+   background-color: #4577B0;
 }
 section.home .redes-sociais img{
    width: 40px;
@@ -170,12 +171,13 @@ section.about .content{
 section.about h2{
    text-align: center;
 }
-section.about .container-foto img{
-   
+section.about .container-foto {
+   display: flex;
+   flex-direction: column;
 }
 section.about div.container-bio{
-   background-color: rgba(0, 0, 0, 0.253);
-   padding:0 2rem;
+   background-color: rgba(0, 0, 0, 0.582);
+   padding:0 3rem;
    border-radius: 1rem;
    width: 40rem;
    height: 50rem;
@@ -352,6 +354,7 @@ section.skills .container-flex{
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
+   gap: 4rem;
    margin: 2rem 0;
 }
 section.skills .container-skills{
@@ -373,11 +376,12 @@ section.skills .container-skills .skill{
    padding: 2rem;
 }
 @media (max-width: 800px) {
+   
+}
+@media (max-width: 500px) {
    section.skills picture{
       display: none;
    }
-}
-@media (max-width: 500px) {
    .container-skills{
       justify-content: center;
       align-items: center;
@@ -437,11 +441,8 @@ footer{
 footer .content{
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
    justify-content: space-between;
-}
-footer .content div{
-   height: 30rem;
+   gap: 2rem;
 }
 footer h1{
    font-size: 3rem;
@@ -463,6 +464,15 @@ footer .linkedin {
    margin: 1rem 0;
    align-items: center;
 }
+@media (max-width: 1050px) {
+   footer .content{
+      font-size: 1.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
 /* Animação */
 
 [data-anime] {
@@ -475,11 +485,7 @@ footer .linkedin {
 [data-anime="right"] {
    transform: translate3d(50px, 0, 0);
 }
-@media (max-width: 1825px) {
-   [data-anime="right"] {
-      transform: translate3d(-100%, 0, 0);
-   }
-}
+
 [data-anime="up"] {
    transform: translate3d(0, 100%, 0);
 }
