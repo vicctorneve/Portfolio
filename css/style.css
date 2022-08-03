@@ -35,6 +35,12 @@ h1,h2,h3,h4,h5,h6{
    color: var(--color-padrao);
    font-family: var(--font-title);
 }
+h1{
+   font-size: 5rem;
+}
+h2{
+   font-size: 4rem;
+}
 a{
    text-decoration: none;
    color: inherit;
@@ -485,7 +491,11 @@ footer .linkedin {
 [data-anime="right"] {
    transform: translate3d(50px, 0, 0);
 }
-
+@media (max-width: 1800px) {
+   [data-anime="right"] {
+      transform: translate3d(-100%, 0, 0);
+   }
+}
 [data-anime="up"] {
    transform: translate3d(0, 100%, 0);
 }
@@ -504,3 +514,61 @@ footer .linkedin {
 .grow:hover{
    transform: scale(1.1);
 }
+/* SENDO DESENVOLVIDO */
+section.container-skills{
+   font-size: 2rem;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+section.container-skills h1{
+   text-align: center;
+}
+section.container-skills .description-skill{
+   margin: 4rem 0;
+   width: 100rem;
+   height: 40rem;
+}
+section.container-skills .description-skill .html{
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+   align-items: center;
+}
+section.container-skills .description-skill .text-skill{
+   max-width: 80rem;
+   text-align: center;
+}
+
+section.container-skills .cards-skills{
+   display: flex;
+   gap: 2rem;
+   color: white;
+   justify-content: space-evenly;
+}
+section.container-skills .cards-skills .skill{
+   display: flex;
+   cursor: pointer;
+   flex-direction: column;
+   gap: 1rem;
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 1rem;
+}
+section.container-skills .cards-skills .skill .image-skill{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+section.container-skills .cards-skills .skill .image-skill img{
+   width: 3rem;
+}
+section.container-skills .line-carousel{
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #48368A;
+   height: 0.3rem;
+}
+/* SENDO DESENVOLVIDO */
+
