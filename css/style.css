@@ -330,7 +330,6 @@ section.container-skills h1{
 section.container-skills .container-padrao{
    display: flex;
    gap: 2rem;
-   background-color: #4577B0;
    flex-direction: column;
    align-items: center;
    justify-content: center;
@@ -339,7 +338,6 @@ section.container-skills .container-padrao{
 section.container-skills .description-skill{
    display: flex;
    flex-direction: column;
-   background-color: #48368A;
    align-items: center;
    justify-content: center;
    margin: 4rem 0;   
@@ -358,8 +356,7 @@ section.container-skills .description-skill .text-skill{
 section.container-skills .cards-skills{
    width: 90vw;
    max-width: 80rem;
-   border-bottom: 0.3rem solid blueviolet;
-   background-color: #4577B0;
+   border-bottom: 0.3rem solid rgb(2, 59, 82);
    display: flex;
    gap: 2rem;
    color: white;
@@ -408,7 +405,7 @@ section.container-skills .skill-github{
       display: none;
    }
    section.container-skills .description-skill .text-skill{
-      font-size: 1rem;
+      font-size: 1.5rem;
    }
 }
 section.contacts{
