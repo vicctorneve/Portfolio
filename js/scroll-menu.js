@@ -6,7 +6,7 @@ menuLi.forEach(item => {
 
 const getScrollTopByHref = element => {
    const id = element.getAttribute('href');
-   return document.querySelector(id).offsetTop - 40
+   return document.querySelector(id).offsetTop
 }
 
 const scrollToPosition = to => {
