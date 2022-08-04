@@ -111,40 +111,94 @@
       <section class="container-skills">
          <div class="content">
             <h1>Habilidades</h1>
-            <div class="description-skill">
-               <div class="html skill">
-                  <img src="assets/img/section-skills/icons-skill-big/simbolo-html5.png" alt="">
-                  <div class="text-skill">
-                     <p>A Linguagem de Marcação de Hipertexto (HTML) é a linguagem principal da web. Conhecida em inglês como Hypertext Markup Language, ela permite que os desenvolvedores desenhem como serão exibidos pelo navegador os elementos da página, como texto, hiperlinks e arquivos multimídia.</p>
-                  </div>
+            <div class="container-padrao">
+               <picture>
+                  <source media="(max-width: 500px)" srcset="assets/img/section-skills/programming-skills-150px.svg">
+                  <img src="assets/img/section-skills/programming-skils.svg" alt="icone do html">
+               </picture>
+               <p>Clique em uma skill.</p>
+            </div>
+            <div class="description-skill skill-html">
+               <div class="img-skill">
+                  <picture>
+                     <source media="(max-width: 600px)" srcset="assets/img/section-skills/icons-skill-big/html-simbolo-150px.png">
+                     <img src="assets/img/section-skills/icons-skill-big/html-simbolo.png" alt="icone do html">
+                  </picture>
+               </div>
+               <div class="text-skill">
+                  <p>A Linguagem de Marcação de Hipertexto (HTML) é a linguagem principal da web. Conhecida em inglês como Hypertext Markup Language, ela permite que os desenvolvedores desenhem como serão exibidos pelo navegador os elementos da página, como texto, hiperlinks e arquivos multimídia.</p>
+               </div>
+            </div>
+            <div class="description-skill skill-css">
+               <div class="img-skill">
+                  <picture>
+                     <source media="(max-width: 600px)" srcset="assets/img/section-skills/icons-skill-big/CSS3-simbolo-150px.png">
+                     <img src="assets/img/section-skills/icons-skill-big/CSS3-simbolo.png" alt="icone do css">
+                  </picture>
+               </div>
+               <div class="text-skill">
+                  <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</p>
+               </div>
+            </div>
+            <div class="description-skill skill-js">
+               <div class="img-skill">
+                  <picture>
+                     <source media="(max-width: 600px)" srcset="assets/img/section-skills/icons-skill-big/javascript-simbolo-150px.png">
+                     <img src="assets/img/section-skills/icons-skill-big/javascript-simbolo.png" alt="icone do javascript">
+                  </picture>
+               </div>
+               <div class="text-skill">
+                  <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+               </div>
+            </div>
+            <div class="description-skill skill-git">
+               <div class="img-skill">
+                  <picture>
+                     <source media="(max-width: 600px)" srcset="assets/img/section-skills/icons-skill-big/git-simbolo-150px.png">
+                     <img src="assets/img/section-skills/icons-skill-big/git-simbolo.png" alt="icone do git">
+                  </picture>
+               </div>
+               <div class="text-skill">
+                  <p>O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e facilmente voltar para qualquer ponto para saber como o código estava naquela data.</p>
+               </div>
+            </div>
+            <div class="description-skill skill-github">
+               <div class="img-skill">
+                  <picture>
+                     <source media="(max-width: 600px)" srcset="assets/img/section-skills/icons-skill-big/github-simbolo-150px.png">
+                     <img src="assets/img/section-skills/icons-skill-big/github-simbolo.png" alt="icone do github">
+                  </picture>
+               </div>
+               <div class="text-skill">
+                  <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.</p>
                </div>
             </div>
             <div class="cards-skills">
-               <div class="skill grow">
+               <div class="skill grow" id="card-html">
                   <div class="image-skill">
                      <img src="assets/img/skills/logo-html-skill.webp" alt="">
                   </div>
                   <p>HTML</p>
                </div>
                <div class="skill grow">
-                  <div class="image-skill">
-                     <img src="assets/img/skills/logo-css-skill.webp" alt="">
+                  <div class="image-skill" id="card-css">
+                     <img src="assets/img/section-skills/icons-skills-cards/logo-css-skill.webp" alt="">
                   </div>
                   <p>CSS</p>
                </div>
-               <div class="skill grow">
+               <div class="skill grow" id="card-js">
                   <div class="image-skill">
                      <img src="assets/img/skills/logo-js-skill.webp" alt="">
                   </div>
                   <p>Javascript</p>
                </div>
-               <div class="skill grow">
+               <div class="skill grow" id="card-git">
                   <div class="image-skill">
                      <img src="assets/img/skills/logo-git-skill.webp" alt="">
                   </div>
                   <p>GIT</p>
                </div>
-               <div class="skill grow">
+               <div class="skill grow" id="card-github">
                   <div class="image-skill">
                      <img src="assets/img/skills/logo-github-skill.svg" alt="">
                   </div>
@@ -156,6 +210,7 @@
                
             </div>
          </div>
+         <script src="js/script-skill.js"></script>
       </section>
 
       <section class="skills" id="skills">

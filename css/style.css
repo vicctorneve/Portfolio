@@ -156,7 +156,7 @@ section.home .redes-sociais img{
    }
 }
 @media (max-width:450px) {
-   section.home {
+   section.home, section.home h1 {
      font-size: 2rem;
    }
 }
@@ -347,7 +347,7 @@ div.agendar-contato .content button{
 
 section.skills {
    font-size: 3rem;
-   display: flex;
+   display: none;
    flex-direction: column;
    align-items: center;
    justify-content: center;
@@ -381,19 +381,16 @@ section.skills .container-skills .skill{
    justify-content: center;
    padding: 2rem;
 }
-@media (max-width: 800px) {
-   
-}
 @media (max-width: 500px) {
    section.skills picture{
       display: none;
    }
-   .container-skills{
+   section.skills .container-skills{
       justify-content: center;
       align-items: center;
       flex-direction: column;
    }
-   .container-skills .skill{
+   section.skills .container-skills .skill{
       width: 90vw;
       background-color: black;
    }
@@ -517,7 +514,7 @@ footer .linkedin {
 /* SENDO DESENVOLVIDO */
 section.container-skills{
    font-size: 2rem;
-   display: none;
+   display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
@@ -525,22 +522,29 @@ section.container-skills{
 section.container-skills h1{
    text-align: center;
 }
-section.container-skills .description-skill{
-   margin: 4rem 0;
-   width: 100rem;
-   height: 40rem;
-}
-section.container-skills .description-skill .html{
+section.container-skills .container-padrao{
    display: flex;
    gap: 2rem;
    flex-direction: column;
    align-items: center;
+   margin: 4rem 0;
+}
+section.container-skills .description-skill{
+   display: flex;
+   flex-direction: column;
+   margin: 4rem 0;   
+   gap: 2rem;
+}
+section.container-skills .description-skill .img-skill{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 section.container-skills .description-skill .text-skill{
+   overflow: hidden;
    max-width: 80rem;
    text-align: center;
 }
-
 section.container-skills .cards-skills{
    display: flex;
    gap: 2rem;
@@ -569,6 +573,27 @@ section.container-skills .line-carousel{
    justify-content: space-evenly;
    background-color: #48368A;
    height: 0.3rem;
+}
+section.container-skills .skill-html{
+   display: none;
+}
+section.container-skills .skill-css{
+   display: none;
+}
+section.container-skills .skill-js{
+   display: none;
+}
+section.container-skills .skill-git{
+   display: none;
+}
+section.container-skills .skill-github{
+   display: none;
+}
+@media (max-width:500px ){
+   #card-git,
+   #card-github{
+      display: none;
+   }
 }
 /* SENDO DESENVOLVIDO */
 
