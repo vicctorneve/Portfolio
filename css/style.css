@@ -51,6 +51,7 @@ header{
    padding: 1rem;
    position: fixed;
    top: 0;
+   height: 8vh;
    width: 100vw;
    z-index: 10;
 }
@@ -98,7 +99,7 @@ header .menu-mobile div{
       left: 0;
       right: 0;
       background-color: rgba(0, 0, 0, 0.377);      
-      top: 6.5vh;
+      top: 8vh;
    }
    header .active{
       height: 25rem;
@@ -327,7 +328,7 @@ section.container-skills{
 section.container-skills h1{
    text-align: center;
 }
-section.container-skills .container-padrao{
+section.container-skills .container-introduction{
    display: flex;
    gap: 2rem;
    flex-direction: column;
@@ -376,10 +377,6 @@ section.container-skills .cards-skills .skill .image-skill{
    align-items: center;
    justify-content: center;
 }
-section.container-skills .cards-skills .skill .image-skill img{
-   width: 3rem;
-}
-
 section.container-skills .skill-html{
    display: none;
 }
@@ -428,6 +425,9 @@ section.contacts form h1{
    text-align: center;
 }
 section.contacts form input{
+   padding: 1rem;
+}
+section.contacts form textarea{
    padding: 1rem;
 }
 section.contacts form button{

@@ -1,4 +1,4 @@
-const ContainerInstruction = document.querySelector('.container-padrao')
+const ContainerInstruction = document.querySelector('.container-introduction')
 
 const cardHtml = document.querySelector('#card-html');
 const cardCss = document.querySelector('#card-css')
