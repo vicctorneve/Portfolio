@@ -281,6 +281,10 @@ section.container-projects h1{
 .container-cards #clone-whatsapp .card-img{
    background-size: cover;
 }
+.container-cards #sistemaLogin .card-img{
+   background: url(../assets/img/previews-projects/preview-sistemaLogin.png) center; 
+   background-size: cover;
+}
 .container-cards .card .name-project{
    padding: 1rem;
    font-size: 2rem;
@@ -289,13 +293,14 @@ section.container-projects h1{
    text-align: center;
 }
 .container-cards .card button{
+   width: 160px;
    background-color: orange;
    color: white;
    font-weight: bolder;
    border-radius: 1rem;
    cursor: pointer;
    display: block;
-   margin: 2rem auto;
+   margin: 20px auto;
    padding: 1rem;
 }
 p.more-projects{
@@ -524,7 +529,4 @@ footer .linkedin {
 .grow:hover{
    transform: scale(1.1);
 }
-/* SENDO DESENVOLVIDO */
-
-/* SENDO DESENVOLVIDO */
 
