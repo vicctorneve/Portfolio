@@ -278,7 +278,8 @@ section.container-projects h1{
    background: url(../assets/img/previews-projects/preview-project-to-do-list.webp) center; 
    background-size: cover;
 }
-.container-cards #clone-whatsapp .card-img{
+.container-cards #climaAPI .card-img{
+   background: url(../assets/img/previews-projects/preview-project-climaAPI.png) center;
    background-size: cover;
 }
 .container-cards #sistemaLogin .card-img{
