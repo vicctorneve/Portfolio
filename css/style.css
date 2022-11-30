@@ -535,7 +535,7 @@ footer .linkedin {
    position: fixed;
    top: 0;
    left: 0;
-   background-color: black;
+   background-color: #050e27;
    width: 100%;
    height: 100%;
    display: flex;
@@ -558,12 +558,25 @@ footer .linkedin {
 }
 
 .load{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
    position: relative;
-   box-shadow: 1px 1px 18px 20px #00508C;
-   border: 3px solid #FFFAFD;
+   box-shadow: 1px 1px 20px 15px #3F69A9;
+   border: 5px solid #FDF0E6;
    width: 100px;
    height: 100px;
    border-radius: 100%;
+   transform: scale(1);
+   transition: 1s;
+   opacity: 100%;
+}
+
+.hide{
+   visibility: hidden;
+   opacity: 0;
+   transform: scale(0.8);
 }
 
 
