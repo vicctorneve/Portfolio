@@ -211,118 +211,103 @@ section.about div.container-bio{
       height: auto;
    }
 }
-section.container-projects{
-   position: relative;
+
+section.container-projects .content{
+   padding: 20px;
+}
+
+section.container-projects .aviso{
+   background-color: #1A396C;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 10px 0;
+}
+section.container-projects .container-cards{
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 40px;
+}
+section.container-projects .container-cards .card{
+   background-color: #1A396C;
+   border: 1px solid cyan;
+   width: 300px;
+   height: 400px;
+   border-radius: 10px;
+}
+
+section.container-projects .container-cards .card.decrease:hover{
+   border: 1px solid orange;
+}
+
+section.container-projects .container-cards .card .img{
+   background-color: black;
+   
+   height: 200px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+section.container-projects .container-cards .text{
+   padding: 10px;
+   text-align: justify;
+
+}
+section.container-projects .container-cards .text h2{
+   font-size: 1.5em;
+   background-color: #050e27;
+   text-align: center;
+   margin-bottom: 20px;
+}
+section.container-projects .container-cards #clima .img{
+   background: url(../assets/img/previews-projects/preview-project-climaAPI.png) center center;
+   background-size: cover;
+}
+section.container-projects .container-cards #easymoney .img{
+   background: url(../assets/img/previews-projects/preview-project-easymoney.png) center center;
+   background-size: cover;
+}
+section.container-projects .container-cards #sistema-de-login .img{
+   background: url(../assets/img/previews-projects/preview-sistemaLogin.png) center center;
+   background-size: cover;
+}
+section.container-projects .container-cards #to-do-list .img{
+   background: url(../assets/img/previews-projects/preview-project-to-do-list.png) center center;
+   background-size: cover;
+}
+section.container-projects .container-cards #ecommerce .img{
+   background: url(../assets/img/previews-projects/preview-project-e-commerce.png);
+   background-size: cover;
+}
+section.container-projects .container-cards #invasalign .img{
+   background: url(../assets/img/previews-projects/preview-project-invasalign.png);
+   background-size: cover;
+}
+
+.more-project{
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
-   font-size: 2rem;
-   padding: 2rem 0;
-}
-section.container-projects h1{
-   text-align: center;
-   margin: 1rem 0;
-}
-.container-carousel{
-   display: flex;
-   max-width: 80rem;
-   background-color: rgba(128, 128, 128, 0.342);
-   align-items: center;
-   padding: 1rem;
-   margin: 3rem 0;
-}
-.container-carousel .seta{
-   cursor: pointer;
-}
-.container-cards{
-   margin: 2rem 0;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-.container-cards .card{
-   background-color: black;
-   color: white;
-   width: 20rem;
-   height: 274px;
-   margin: 1rem;
-   border-radius: 1rem;
-}
-.container-cards .card .card-img{
-   position: relative;
-   background-color: gray;
-   text-align: center;
-   display: flex;
-   text-transform: uppercase;
-   font-size: 1.5rem;
-   align-items: center;
-   justify-content: center;
-   height: 15rem;
-   border-top-left-radius: 1rem;
-   border-top-right-radius: 1rem;
-}
-.container-cards #easymoney .card-img{
-   background-size: cover;
-   background: url(../assets/img/previews-projects/preview-project-easymoney.png) center center; 
-}
-.container-cards #e-commerce .card-img{
-   background: url(../assets/img/previews-projects/preview-project-e-commerce.png); 
-   background-size: cover;
-}
-.container-cards #invasilign .card-img{
-   background: url(../assets/img/previews-projects/preview-project-invasalign.webp) center left; 
-   background-size: cover;
-}
-.container-cards #to-do-list .card-img{
-   background: url(../assets/img/previews-projects/preview-project-to-do-list.webp) center; 
-   background-size: cover;
-}
-.container-cards #climaAPI .card-img{
-   background: url(../assets/img/previews-projects/preview-project-climaAPI.png) center;
-   background-size: cover;
-}
-.container-cards #sistemaLogin .card-img{
-   background: url(../assets/img/previews-projects/preview-sistemaLogin.png) center; 
-   background-size: cover;
-}
-.container-cards .card .name-project{
-   padding: 1rem;
-   font-size: 2rem;
-   color: var(--color-padrao);
-   font-weight: bold;
-   text-align: center;
-}
-.container-cards .card button{
-   width: 160px;
-   background-color: orange;
-   color: white;
-   font-weight: bolder;
-   border-radius: 1rem;
-   cursor: pointer;
-   display: block;
-   margin: 20px auto;
-   padding: 1rem;
-}
-p.more-projects{
    color: gray;
-   text-align: center;
 }
-section.container-projects a.github{
-   transition: all 200ms ease-in-out;
+.more-project .github{
+   cursor: pointer;
+   width: 150px;
+   background-color: rgba(128, 128, 128, 0.479);
+   border: 1px solid gray;
+   padding: 10px;
+   border-radius: 10px;
    display: flex;
-   justify-content: center;
+   gap: 20px;
+   color: white;
    align-items: center;
-   width: 20rem;
-   margin: 2rem auto;
-   gap: 1rem;
-   background-color: rgba(128, 128, 128, 0.247);
-   padding: 1rem;
-   border-radius: 2rem;
-   border: 0.2rem solid gray;
+   justify-content: center;
+   margin: 10px 0;
 }
-section.container-projects a.github:hover{
-   border: 0.2rem solid aqua;
+
+.more-project .github:hover{
+   border: 1px solid cyan;
 }
 section.container-skills{
    font-size: 2rem;

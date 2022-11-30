@@ -2,7 +2,7 @@ const myName = document.querySelector('section.home h1#name');
 const profissao = document.querySelector('section.home p#profissao');
 
 function typing (msg, write) {
-   write.innerHTML = ''
+   write.innerHTML = '';
    let text = msg;
    for (let i = 0; i < text.length; i++) {
       setTimeout(function(){
@@ -11,6 +11,7 @@ function typing (msg, write) {
    }
 }
 function effectTypingAndDeleting () {
-   typing('Olá, meu nome é Vicctor Neves', myName)
+   typing('Olá, meu nome é Vicctor Neves', myName);
 }
-effectTypingAndDeleting()
+
+effectTypingAndDeleting();
