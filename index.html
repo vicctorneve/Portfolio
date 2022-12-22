@@ -69,7 +69,7 @@
             <div class="content">
                <h1>Projetos</h1>
                <p class="aviso">Clique em cima de um projeto para visualiza-lo!</p>
-               <div class="container-cards">
+               <div class="container-cards" data-anime="right">
                   <a href="https://github.com/vicctorneve/climaAPI" target="_blank">
                      <div class="card decrease" id="clima">
                         <div class="img"></div>
@@ -127,23 +127,22 @@
                </div>
                <div class="more-project">
                   <p>Mais projetos:</p>
-                  <div class="github decrease">
+                  <a class="github decrease" href="https://github.com/vicctorneve" target="_blank">
                      <img src="assets/img/icons/logo-github-30px.svg" alt="">
-                     <p>Github</p>
-                  </div>
+                     Github
+                  </a>
                </div>
          </div>
       </section>
-      <!--SENDO DESENVOLVIDO-->
       <section class="container-skills" id="skills">
          <div class="content" >
             <h1>Habilidades</h1>
             <div class="container-introduction" data-anime="left">
-               <picture>
+               <!-- <picture>
                   <source media="(max-width: 370px)" srcset="assets/img/section-skills/programming-skills-150px.svg">
                   <source media="(max-width: 630px)" srcset="assets/img/section-skills/programming-skills-240px.svg">
-                  <img src="assets/img/section-skills/programming-skills-original.svg" alt="icone do html">
-               </picture>
+               </picture> -->
+               <img class="img-programming" src="assets/img/section-skills/programming-skills-original.svg" alt="icone do html">
                <p>Clique em uma skill.</p>
             </div>
             <div class="description-skill skill-html" data-anime="left">
@@ -236,6 +235,7 @@
          </div>
          <script src="js/script-skill.js"></script>
       </section>
+      
       <section class="contacts" id="contacts">
          <div class="content" data-anime="up">
             <form action="https://api.staticforms.xyz/submit" method="post">

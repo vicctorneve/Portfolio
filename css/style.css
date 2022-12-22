@@ -36,10 +36,15 @@ h1,h2,h3,h4,h5,h6{
    font-family: var(--font-title);
 }
 h1{
-   font-size: 5rem;
+   font-size: 3em;
+}
+@media (max-width:400px){
+   h1{
+      font-size: 2em;
+   }
 }
 h2{
-   font-size: 4rem;
+   font-size: 2em;
 }
 a{
    text-decoration: none;
@@ -194,6 +199,10 @@ section.about div.container-bio{
    justify-content: center;
    line-height: 3rem;
 }
+section.about div.container-bio img{
+   width: 40rem;
+   height: 50rem;
+}
 @media (max-width: 500px) {
    section.about .container-foto img{
       width: 90vw;
@@ -244,7 +253,7 @@ section.container-projects .container-cards .card.decrease:hover{
 
 section.container-projects .container-cards .card .img{
    background-color: black;
-   
+   width: 300px;
    height: 200px;
    border-radius: 10px 10px 0px 0px;
 }
@@ -260,28 +269,29 @@ section.container-projects .container-cards .text h2{
    text-align: center;
    margin-bottom: 20px;
 }
+
 section.container-projects .container-cards #clima .img{
-   background: url(../assets/img/previews-projects/preview-project-climaAPI.png) center center;
+   background: url(../assets/img/previews-projects/preview-project-climaAPI.webp) center center;
    background-size: cover;
 }
 section.container-projects .container-cards #easymoney .img{
-   background: url(../assets/img/previews-projects/preview-project-easymoney.png) center center;
+   background: url(../assets/img/previews-projects/preview-project-easymoney.webp) center center;
    background-size: cover;
 }
 section.container-projects .container-cards #sistema-de-login .img{
-   background: url(../assets/img/previews-projects/preview-sistemaLogin.png) center center;
+   background: url(../assets/img/previews-projects/preview-sistemaLogin.webp) center center;
    background-size: cover;
 }
 section.container-projects .container-cards #to-do-list .img{
-   background: url(../assets/img/previews-projects/preview-project-to-do-list.png) center center;
+   background: url(../assets/img/previews-projects/preview-project-to-do-list.webp) center center;
    background-size: cover;
 }
 section.container-projects .container-cards #ecommerce .img{
-   background: url(../assets/img/previews-projects/preview-project-e-commerce.png);
+   background: url(../assets/img/previews-projects/preview-project-e-commerce.webp);
    background-size: cover;
 }
 section.container-projects .container-cards #invasalign .img{
-   background: url(../assets/img/previews-projects/preview-project-invasalign.png);
+   background: url(../assets/img/previews-projects/preview-project-invasalign.webp);
    background-size: cover;
 }
 
@@ -296,7 +306,7 @@ section.container-projects .container-cards #invasalign .img{
    width: 150px;
    background-color: rgba(128, 128, 128, 0.479);
    border: 1px solid gray;
-   padding: 10px;
+   padding: 15px;
    border-radius: 10px;
    display: flex;
    gap: 20px;
@@ -319,20 +329,31 @@ section.container-skills{
 section.container-skills h1{
    text-align: center;
 }
+
 section.container-skills .container-introduction{
+   position: relative;
+   max-width: 500px;
+   width: 80vw;
    display: flex;
    gap: 2rem;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 4rem 0;
+   margin: 4rem auto;
 }
+
+section.container-skills .container-introduction .img-programming{
+   width: 90%;
+}
+
 section.container-skills .description-skill{
+   max-width: 500px;
+   width: 80vw;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin: 4rem 0;   
+   margin: 4rem auto;   
    gap: 2rem;
 }
 section.container-skills .description-skill .img-skill{
@@ -561,7 +582,7 @@ footer .linkedin {
 .hide{
    visibility: hidden;
    opacity: 0;
-   transform: scale(0.8);
+   transform: scale(0.9);
 }
 
 
