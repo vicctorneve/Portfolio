@@ -254,7 +254,7 @@ section.container-projects .container-cards .card.decrease:hover{
 section.container-projects .container-cards .card .img{
    background-color: black;
    width: 300px;
-   height: 200px;
+   height: 210px;
    border-radius: 10px 10px 0px 0px;
 }
 
@@ -286,12 +286,12 @@ section.container-projects .container-cards #to-do-list .img{
    background: url(../assets/img/previews-projects/preview-project-to-do-list.webp) center center;
    background-size: cover;
 }
-section.container-projects .container-cards #ecommerce .img{
-   background: url(../assets/img/previews-projects/preview-project-e-commerce.webp);
+section.container-projects .container-cards #projetoAgenda .img{
+   background: url(../assets/img/previews-projects/preview-contatos.png) center center;
    background-size: cover;
 }
-section.container-projects .container-cards #invasalign .img{
-   background: url(../assets/img/previews-projects/preview-project-invasalign.webp);
+section.container-projects .container-cards #psicologia .img{
+   background: url(../assets/img/previews-projects/preview-projetoVida&Carreira.png) no-repeat;
    background-size: cover;
 }
 
