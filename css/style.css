@@ -12,8 +12,6 @@
 :root {
    --font-title: 'Poppins', sans-serif;
    --font-paragrafos: 'Montserrat', sans-serif;
-   --color-primary-body: #48368A;
-   --color-secundary-body: #140B24; 
    --color-padrao: aqua;
 }
 .content{
@@ -30,7 +28,6 @@ body {
    background: url(../assets/img/background/bg-body.webp) no-repeat;
    background-size: cover;
    font-size: 1.6rem;
-   background-color: var(--color-secundary-body);
    color: white;
    background-attachment: fixed;
 }
@@ -215,9 +212,7 @@ section.about div.container-bio img{
       height: auto;
    }
 }
-section.container-projects {
-   padding: 60px 0;
-}
+
 
 
 section.container-projects .aviso{
@@ -360,7 +355,8 @@ section.container-skill .description-skill{
 }
 
 @media (max-width: 600px){
-   section.container-skill .description-skill{
+   section.container-skill .description-skill,
+   section.container-skill .container-introduction{
       height: 250px;
    }
 }
