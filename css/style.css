@@ -8,6 +8,7 @@
    list-style: none;
    font-family: var(--font-paragrafos);
 }
+
 :root {
    --font-title: 'Poppins', sans-serif;
    --font-paragrafos: 'Montserrat', sans-serif;
@@ -317,7 +318,6 @@ section.container-projects .container-cards #psicologia .img{
 section.container-skill{
    display: flex;
    align-items: center;
-   padding: 40px 0;
 }
 
 section.container-skil .content{
@@ -325,18 +325,20 @@ section.container-skil .content{
 }
 
 section.container-skill h1{
+   margin-top: 40px;
    text-align: center;
 }
 
 section.container-skill .container-introduction{
    position: relative;
    max-width: 500px;
+   height: 400px;
    width: 80vw;
    display: flex;
    gap: 2rem;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
    margin: 4rem auto;
 }
 
@@ -390,7 +392,7 @@ section.container-skill .carousel{
    margin: 20px 0;
    overflow-x: hidden;
    max-width: 410px;
-   padding: 10px;
+   padding: 20px;
    display: flex;
    gap: 10px;
 }
@@ -436,8 +438,10 @@ section.container-skill .card{
 }
 
 section.contacts{
+   position: relative;
    display: flex;
    align-items: center;
+   justify-content: center;
 }
 section.contacts form{
    position: relative;
@@ -476,49 +480,26 @@ section.contacts form button:hover{
    }
 
 }
-footer{
-   box-shadow: 1rem 0rem 3rem 4px white;
-   padding: 3rem;
-   background-color: white;
-   color: black;
-   border-top-right-radius: 3rem;
-   border-top-left-radius: 3rem;
-}
-footer .content{
+
+.footer{
+   padding: 10px;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   gap: 2rem;
+   justify-content: space-around;
+   padding: 10px;
+   border-radius: 20px 20px 0 0;
+   background-color: black;
 }
-footer h1{
-   font-size: 3rem;
-   color: black;
-   margin: 2rem 0;
-}
-footer{
-   line-height: 3rem;
-}
-footer li:hover,
-footer p:hover{
-   text-decoration: underline;
-}
-footer .github,
-footer .linkedin {
+
+.footer  li{
+   margin: 10px 0;
    cursor: pointer;
-   display: flex;
-   gap: 2rem;
-   margin: 1rem 0;
-   align-items: center;
 }
-@media (max-width: 1050px) {
-   footer .content{
-      font-size: 1.5rem;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-   }
+
+.footer li:hover{
+   text-decoration: underline ;
 }
+
 /* Animação */
 
 [data-anime] {
