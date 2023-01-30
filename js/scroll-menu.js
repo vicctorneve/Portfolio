@@ -1,13 +1,8 @@
-const menuLi = document.querySelectorAll('.menu a');
-
-menuLi.forEach(item => {
-   item.addEventListener('click', scrollToIdonClick)
-});
+const menuLinks = document.querySelectorAll('.menu a');
 
 const getScrollTopByHref = element => {
    const id = element.getAttribute('href');
    if(id === "#about"){
-      console.log(id)
       return document.querySelector(id).offsetTop - 10
    }
    return document.querySelector(id).offsetTop 
@@ -20,8 +15,11 @@ const scrollToPosition = to => {
    })
 }
 
-function scrollToIdonClick(e) {
+const scrollToIdonClick =(e) => {
    e.preventDefault();
    const to = getScrollTopByHref(e.target);
    scrollToPosition(to);
 }
+
+menuLinks.forEach(item => item.addEventListener('click', scrollToIdonClick));
+   

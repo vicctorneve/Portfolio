@@ -168,7 +168,7 @@ section.about .content{
    align-items: flex-end;
    justify-content: space-around;
    flex-wrap: wrap;
-   width: 100vw;
+   width: 100%;
 }
 section.about h2{
    text-align: center;

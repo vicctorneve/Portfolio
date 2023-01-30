@@ -2,31 +2,22 @@ const arrowLeft = document.querySelector('#arrow-left');
 const arrowRight = document.querySelector('#arrow-right');
 const carousel = document.querySelectorAll(".carousel .card");
 
-const cards = [...carousel]
-let baseCard = 5;
+let baseCard;
+let hiddenCard;
+let ScreenPx;
+let contLeft = 0;
 
 
 function handleScreenSize(){
    let screenWidth = window.screen.width
 
-   if(screenWidth > 550) {
-      baseCard = 5;
-   }
+   baseCard = 5;
 
-   if(screenWidth < 540){
-      baseCard = 4;
-      changeBaseCard()
-   }
-
-   if(screenWidth <= 470){
-      baseCard = 3;
-      changeBaseCard()
-   }
-   if(screenWidth <= 360){
-      baseCard = 2;
-      changeBaseCard()
-   }
-
+   if(screenWidth < 540)baseCard = 4;
+   if(screenWidth <= 470) baseCard = 3;
+   if(screenWidth <= 380) baseCard = 2;  
+   if(screenWidth <= 295) baseCard = 1;
+   changeBaseCard()
 }
 
 window.addEventListener("resize" , handleScreenSize)
@@ -34,13 +25,9 @@ window.addEventListener("load" , handleScreenSize)
 
 
 function changeBaseCard(){
-   hiddenCard = cards.length - baseCard;
-   px = hiddenCard * -80;
+   hiddenCard = carousel.length - baseCard;
+   ScreenPx = hiddenCard * -80;
 }
-
-let hiddenCard = cards.length - baseCard;
-let px = hiddenCard * -80;
-let contLeft = 0;
 
 arrowLeft.addEventListener("click", ()=>{
 
@@ -49,18 +36,18 @@ arrowLeft.addEventListener("click", ()=>{
    }else{
       contLeft+= 80
    }
-   cards.forEach(element => clickArrowLeft(element));
+   carousel.forEach(element => clickArrowLeft(element));
 })
 
 const clickArrowLeft = (element) => element.style.transform = `translateX(${contLeft}px)`;
 
 arrowRight.addEventListener("click", ()=>{
-   if(contLeft == px){
+   if(contLeft == ScreenPx){
       contLeft = 0
    }else{
       contLeft-= 80
    }
    
-   cards.forEach(element => clickArrowLeft(element));
+   carousel.forEach(element => clickArrowLeft(element));
 })
 
