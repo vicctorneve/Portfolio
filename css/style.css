@@ -50,20 +50,17 @@ a{
 header{
    background-color: rgba(0, 0, 0, 0.377);
    color: white;
-   padding: 1rem;
    position: fixed;
-   top: 0;
-   height: 8vh;
    width: 100vw;
+   top: 0;
    z-index: 10;
 }
 header .menu-content {
-   height: 5vh;
+   height: 8vh;
    max-width: 1200px;
-   align-items: center;
    display: flex;
    margin: auto;
-   justify-content: space-between;
+   align-items: center;
 }
 header .menu {
    display: flex;
@@ -130,6 +127,7 @@ section.home .content{
    justify-content: center;
    flex-direction: column;
    height: 100vh;
+   width: 100%;
 }
 section.home .container-title{
    display: flex;
@@ -202,7 +200,6 @@ section.about div.container-bio img{
 }
 @media (max-width: 952px) {
    section.about .content{
-      padding: 2rem;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -211,6 +208,11 @@ section.about div.container-bio img{
       width: auto;
       height: auto;
    }
+}
+
+section.container-projects .content{
+   width: 100%;
+   padding: 50px 2rem;
 }
 
 
@@ -316,7 +318,7 @@ section.container-skill{
 }
 
 section.container-skil .content{
-   position: relative;
+   width: 100vw;
 }
 
 section.container-skill h1{
@@ -486,6 +488,13 @@ section.contacts form button:hover{
    border-radius: 20px 20px 0 0;
    background-color: black;
 }
+
+@media (max-width:748px){
+   .footer div{
+      width: 90vw;
+   }
+}
+
 
 .footer  li{
    margin: 10px 0;
