@@ -75,14 +75,13 @@ header .menu li:hover{
 }
 header .menu-mobile{
    display: none;
+   padding: 0 10px;
+}
+
+header .menu-mobile i{
    cursor: pointer;
 }
-header .menu-mobile div{
-   margin: 0.8rem;
-   width: 3.2rem;
-   height: 0.2rem;
-   background-color: white;
-}
+
 @media (max-width: 800px){
    header .menu li {
       border-bottom: 0.1rem solid black;

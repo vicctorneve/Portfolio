@@ -1,18 +1,23 @@
-const menuMobile = document.querySelector('.menu-mobile');
+const menuMobile = document.querySelector('.menu-mobile i');
 const menu = document.querySelector('.menu');
 const menuLi = document.querySelectorAll('.menu li');
 
 menuMobile.addEventListener('click', function() {
-   menu.classList.toggle('active');
+   toggleMenu()
+   
+   if(!menu.classList.contains('active')){
+      closeMenu()
+   }
+
 });
 
 
-const closeMenu = () =>{
-   menuLi.forEach(li => {
-      li.addEventListener('click', function (){
-         menu.classList.remove('active')
-      })
-   });
+const toggleMenu = () => {
+   menu.classList.toggle('active');
+   menuMobile.classList.toggle('fa-bars')
+   menuMobile.classList.toggle('fa-xmark')
 }
 
-closeMenu()
+const closeMenu = () => menu.classList.remove('active')
+menuLi.forEach(li => li.addEventListener('click', closeMenu));
+
