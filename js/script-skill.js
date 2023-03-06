@@ -17,7 +17,6 @@ function showDescriptSkill(){
          hideDescriptionSkills()
          hideContainerTemp()
          descriptionSkill[i].style.display="flex"
-         // parar o for
       })
    }
 }

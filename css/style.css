@@ -418,20 +418,29 @@ section.container-skill .card{
 #js{
    background-image: url('../assets/img/skills/logo-js-skill.webp');
 }
+
 #node{
    background-image: url('../assets/img/skills/logo-node-skill.webp');
 }
+
 #java{
    background-image: url('../assets/img/skills/logo-java-skill.png');
 }
+
 #react{
    background-image: url('../assets/img/skills/logo-react-skill.png');
 }
+
 #express{
    background-image: url('../assets/img/skills/logo-express-skill.png');
 }
+
 #git{
    background-image: url('../assets/img/skills/logo-git-skill.webp');
+}
+
+#mysql{
+   background-image: url('../assets/img/skills/logo-mysql-skill.jpg');
 }
 
 section.contacts{

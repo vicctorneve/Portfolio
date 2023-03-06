@@ -19,5 +19,10 @@ const toggleMenu = () => {
 }
 
 const closeMenu = () => menu.classList.remove('active')
-menuLi.forEach(li => li.addEventListener('click', closeMenu));
+
+menuLi.forEach(li => li.addEventListener('click', ()=>{
+   closeMenu()
+   menuMobile.classList.toggle('fa-bars')
+   menuMobile.classList.toggle('fa-xmark')
+}));
 

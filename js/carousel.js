@@ -14,7 +14,7 @@ function handleScreenSize(){
    baseCard = 5;
 
    if(screenWidth < 540)baseCard = 4;
-   if(screenWidth <= 470) baseCard = 3;
+   if(screenWidth <= 460) baseCard = 3;
    if(screenWidth <= 380) baseCard = 2;  
    if(screenWidth <= 295) baseCard = 1;
    changeBaseCard()
